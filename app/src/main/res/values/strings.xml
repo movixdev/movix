@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Movix</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Helps</string>
+    <string name="title_activity_main">Movix</string>
+    <string name="image_content_description">Movix_Logo</string>
+    <string name="create_account">Créer un compte</string>
+    <string name="email">Adresse email</string>
+    <string name="password">Mot de passe</string>
+    <string name="connect">Se connecter</string>
+    <string name="title_activity_login_display">Menu Principal</string>
+	<string name="hint_mail">"Ici : L'adresse email de l'utilisateur"</string>
+	<string name="hint_pass">"Ici : Le mot de passe de l'utilisateur"</string>
+	<string name="email_format_error">"Le champs email ne correspond pas au format d'une adresse mail"</string>
+	<string name="email_or_password_empty">"L'adresse email et mot de passe sont obligatoires"</string>
+    <string name="search_hint">Search</string>
+
+    //bar task
+    <string name ="menu_search">rechercher</string>
+</resources>
