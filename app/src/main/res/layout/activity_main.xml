@@ -22,7 +22,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/small_padding"
         android:text="@string/create_account"
-        android:textColor="#fefefe"
+        android:textColor="#1bd427"
         android:background="#710000" />
 
     <TextView
