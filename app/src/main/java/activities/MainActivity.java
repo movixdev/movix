@@ -69,4 +69,9 @@ public class MainActivity extends Activity {
 		return true;
 	}
 
+	public void test () {
+		int i = 2+2;
+		int j = 1+1;
+	}
+
 }
