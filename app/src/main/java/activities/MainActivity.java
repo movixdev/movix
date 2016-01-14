@@ -69,8 +69,13 @@ public class MainActivity extends Activity {
 		return true;
 	}
 
-public void test (){
-	int i = 1+2;
-	int x = 4+4;
-}
+	public void test () {
+<<<<<<< Temporary merge branch 1
+		int i = 1+1;
+=======
+		int i = 2+2;
+		int j = 1+1;
+>>>>>>> Temporary merge branch 2
+	}
+
 }
