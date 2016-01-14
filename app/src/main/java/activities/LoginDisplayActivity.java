@@ -27,6 +27,7 @@ public class LoginDisplayActivity extends Activity {
 
 	final String EXTRA_LOGIN = "user_login";
 	final String EXTRA_PASSWORD = "user_password";
+	int test=9;
 
 
     @Override
