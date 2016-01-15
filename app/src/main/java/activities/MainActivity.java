@@ -19,6 +19,7 @@ public class MainActivity extends Activity {
 
 	final String EXTRA_LOGIN = "user_login";
 	final String EXTRA_PASSWORD = "user_password";
+	int x=10;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
