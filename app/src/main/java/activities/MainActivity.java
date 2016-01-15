@@ -1,8 +1,5 @@
 package activities;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,10 +12,14 @@ import android.widget.Toast;
 
 import com.tutos.android.ui.R;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class MainActivity extends Activity {
 
 	final String EXTRA_LOGIN = "user_login";
 	final String EXTRA_PASSWORD = "user_password";
+	final String maman="j'encule maxime";
 
 
 	@Override
