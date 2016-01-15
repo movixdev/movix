@@ -2,7 +2,8 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    android:background="#710000">
+    android:background="@drawable/background"
+    android:weightSum="1">
 
     <ImageView
         android:id="@+id/movix_picture"
@@ -10,20 +11,10 @@
         android:layout_height="250px"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="@dimen/normal_padding"
-        android:src="@mipmap/movix"
+        android:src="@mipmap/movix_icon"
         android:contentDescription="@string/image_content_description"
         android:layout_weight="0"
-        android:background="#710000" />
-
-    <Button
-        android:id="@+id/create_account"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="@dimen/small_padding"
-        android:text="@string/create_account"
-        android:textColor="#ffffff"
-        android:background="#710000" />
+         />
 
     <TextView
         android:layout_width="wrap_content"
@@ -59,14 +50,38 @@
         android:inputType="textPassword"
         android:textColor="#ffffff" />
 
-    <Button
-        android:id="@+id/connect"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="@dimen/normal_padding"
-        android:text="@string/connect"
-        android:background="#710000"
-        android:textColor="#ffffff" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_weight="0.24">
+
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/connect"
+            android:background="@drawable/button_style_white"
+            android:textColor="@color/redMovix"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="52dp"
+            android:layout_marginBottom="32dp"
+            android:layout_alignParentStart="false"
+            />
+
+        <Button
+            android:id="@+id/create_account"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/create_account"
+            android:background="@drawable/button_style_white"
+            android:textColor="@color/redMovix"
+            android:layout_alignTop="@+id/connect"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="37dp"
+            android:onClick="creeruncompte"/>
+    </RelativeLayout>
 
 </LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/PassewordText"
+        android:hint="@string/password"
+        android:layout_above="@+id/EmailText"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="#fff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enregistrez-vous"
+        android:id="@+id/registerFormText"
+        android:layout_above="@+id/prenomNext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:textColor="#fff"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/pseudo"
+        android:ems="10"
+        android:id="@+id/prenomNext"
+        android:layout_above="@+id/nomText"
+        android:layout_alignLeft="@+id/nomText"
+        android:textColorHint="#fff"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/nom"
+        android:ems="10"
+        android:id="@+id/nomText"
+        android:layout_above="@+id/PassewordText"
+        android:layout_alignLeft="@+id/PassewordText"
+        android:textColorHint="#fff"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/EmailText"
+        android:hint="@string/email"
+        android:layout_marginBottom="79dp"
+        android:layout_above="@+id/submitText"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="#fff"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submitText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/button_style_white"
+        android:textColor="@color/redMovix"/>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:src="@mipmap/movix_icon"/>
+</RelativeLayout>

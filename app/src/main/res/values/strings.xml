@@ -15,6 +15,13 @@
 	<string name="email_or_password_empty">"L'adresse email et mot de passe sont obligatoires"</string>
     <string name="search_hint">Search</string>
 
+
     //bar task
     <string name ="menu_search">rechercher</string>
+
+    //Formulaire
+    <string name ="pseudo">Pseudo</string>
+    <string name ="nom">Nom</string>
+
+
 </resources>
