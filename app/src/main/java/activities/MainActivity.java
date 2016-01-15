@@ -13,13 +13,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.tutos.android.ui.R;
 
 public class MainActivity extends Activity {
 
 	final String EXTRA_LOGIN = "user_login";
 	final String EXTRA_PASSWORD = "user_password";
-	int x=11;
-
+	int x=10;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
