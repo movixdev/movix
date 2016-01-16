@@ -15,20 +15,24 @@ import com.tutos.android.ui.R;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class MainActivity extends Activity {
+public class ConnectionActivity extends Activity {
 
 	final String EXTRA_LOGIN = "user_login";
 	final String EXTRA_PASSWORD = "user_password";
-	final String maman="j'encule maxime";
+
 
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.connection_user);
+
+
 
 		final EditText login = (EditText) findViewById(R.id.user_email);
 		final EditText pass = (EditText) findViewById(R.id.user_password);
+
+		//Boutton pour entrer dans l'appli
 		final Button loginButton = (Button) findViewById(R.id.connect);
 		loginButton.setOnClickListener(new OnClickListener() {
 
@@ -38,7 +42,7 @@ public class MainActivity extends Activity {
 				final String passTxt = pass.getText().toString();
 
 				if (loginTxt.equals("") || passTxt.equals("")) {
-					Toast.makeText(MainActivity.this,
+					Toast.makeText(ConnectionActivity.this,
 							R.string.email_or_password_empty,
 							Toast.LENGTH_SHORT).show();
 					return;
@@ -50,16 +54,25 @@ public class MainActivity extends Activity {
 				if (!m.matches()) {
 					// Toast est une classe fournie par le SDK Android pour afficher les messages dans des minis pop up
 					// Le premier argument est le Context, puis le message et à la fin la durée de ce dernier
-					Toast.makeText(MainActivity.this,
+					Toast.makeText(ConnectionActivity.this,
 							R.string.email_format_error, Toast.LENGTH_SHORT)
 							.show();
 					return;
 				}
 
-				Intent intent = new Intent(MainActivity.this,
+				Intent intent = new Intent(ConnectionActivity.this,
 						LoginDisplayActivity.class);
 				intent.putExtra(EXTRA_LOGIN, loginTxt);
 				intent.putExtra(EXTRA_PASSWORD, passTxt);
+				startActivity(intent);
+			}
+		});
+		//Boutton pour créer un compte
+		final Button registerButton = (Button) findViewById(R.id.create_account);
+		registerButton.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(ConnectionActivity.this,FormActivity.class);
 				startActivity(intent);
 			}
 		});

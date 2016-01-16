@@ -4,7 +4,7 @@
         android:radius="400dp"
         />
     <gradient
-        android:gradientRadius="200"
+        android:gradientRadius="100%"
         android:centerX="35%"
         android:centerY="50%"
         android:centerColor="#241F54"

@@ -81,7 +81,7 @@
             android:layout_alignTop="@+id/connect"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="37dp"
-            android:onClick="creeruncompte"/>
+            android:onClick="creat_account"/>
     </RelativeLayout>
 
 </LinearLayout>

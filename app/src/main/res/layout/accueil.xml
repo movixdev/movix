@@ -7,7 +7,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Start"
-        android:id="@+id/button"
+        android:id="@+id/buttonaccueil"
         android:layout_marginBottom="97dp"
         android:background="@drawable/circle_button_accueil"
         android:layout_alignParentBottom="true"
@@ -15,8 +15,8 @@
         android:textColor="#fff"/>
 
     <ImageView
-        android:layout_width="200"
-        android:layout_height="200"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:id="@+id/Logo_accueil"
         android:background="@mipmap/movix_icon"
         android:layout_alignParentTop="true"
