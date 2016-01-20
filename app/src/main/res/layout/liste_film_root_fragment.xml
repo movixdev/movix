@@ -4,13 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:descendantFocusability="blocksDescendants"
-
-    >
+    android:descendantFocusability="blocksDescendants">
 
     <ListView
         android:id="@+id/listFilm"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
+
 
 </RelativeLayout>

@@ -1,34 +1,39 @@
 package fragment;
 
+import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import android.support.v4.app.ListFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 
+
+import com.squareup.picasso.Picasso;
 import com.tutos.android.ui.R;
+
+import java.util.ArrayList;
 
 /**
  * Created by isen on 17/01/2016.
  */
-public class ListFilmFragment extends Fragment {
+public class ListFilmFragment extends ListFragment {
+
+    OnArticleSelectedListener listener;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        return inflater.inflate(R.layout.liste_film_root_fragment,container,false);
+        View rootView = inflater.inflate(R.layout.liste_film_root_fragment, container, false);
+
+        return rootView;
     }
 
-   /* @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
+    public interface OnArticleSelectedListener{
+        public void onArticleSelectedListener (Uri uri);
+    }
 
-        // Fragment List Picasso
 
-        ImageView imageView;
-        imageView = (ImageView)view.findViewById(R.id.imageView);
-        //Picasso.with(getBaseContext()).load("http://i.imgur.com/DvpvklR.png").fit().centerCrop().into(imageView);
 
-    }*/
 }
