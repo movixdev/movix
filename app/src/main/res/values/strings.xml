@@ -10,19 +10,22 @@
     <string name="connect">Se connecter</string>
     <string name="title_activity_login_display">Enregistrez-vous</string>
     <string name="title_accueil">Movix</string>
-	<string name="hint_mail">"Ici : L'adresse email de l'utilisateur"</string>
-	<string name="hint_pass">"Ici : Le mot de passe de l'utilisateur"</string>
-	<string name="email_format_error">"Le champs email ne correspond pas au format d'une adresse mail"</string>
-	<string name="email_or_password_empty">"L'adresse email et mot de passe sont obligatoires"</string>
+    <string name="hint_mail">"Ici : L'adresse email de l'utilisateur"</string>
+    <string name="hint_pass">"Ici : Le mot de passe de l'utilisateur"</string>
+    <string name="email_format_error">"Le champs email ne correspond pas au format d'une adresse mail"</string>
+    <string name="email_or_password_empty">"L'adresse email et mot de passe sont obligatoires"</string>
     <string name="search_hint">Search</string>
 
 
     //bar task
-    <string name ="menu_search">rechercher</string>
+    <string name="menu_search">rechercher</string>
 
     //Formulaire
-    <string name ="pseudo">Pseudo</string>
-    <string name ="nom">Nom</string>
+    <string name="pseudo">Pseudo</string>
+    <string name="nom">Nom</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

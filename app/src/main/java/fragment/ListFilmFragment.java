@@ -1,13 +1,17 @@
 package fragment;
 
+import android.app.ActionBar;
+import android.app.ListFragment;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.ListFragment;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.ProgressBar;
 
 
 import com.squareup.picasso.Picasso;
@@ -21,11 +25,25 @@ import java.util.ArrayList;
 public class ListFilmFragment extends ListFragment {
 
     OnArticleSelectedListener listener;
+    private ListView mListView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.liste_film_root_fragment, container, false);
+        mListView = (ListView) rootView.findViewById(R.id.listFilm);
+
+        //Progresse Bar
+        final ProgressBar progressBar = new ProgressBar(getActivity());
+        progressBar.setLayoutParams(new ActionBar.LayoutParams(ActionBar.LayoutParams.WRAP_CONTENT, ActionBar.LayoutParams.WRAP_CONTENT, Gravity.CENTER));
+        progressBar.setIndeterminate(true);
+        mListView.setEmptyView(progressBar);
+
+        // Add the view in our content view
+        ViewGroup root = (ViewGroup) rootView.findViewById(R.id.RootRelativeLayout);
+        root.addView(progressBar);
+
+
 
         return rootView;
     }
