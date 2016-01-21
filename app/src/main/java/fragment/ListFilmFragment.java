@@ -1,6 +1,7 @@
 package fragment;
 
 import android.app.ActionBar;
+import android.app.Fragment;
 import android.app.ListFragment;
 import android.net.Uri;
 import android.os.Bundle;
@@ -19,19 +20,25 @@ import com.tutos.android.ui.R;
 
 import java.util.ArrayList;
 
+import pojo.Film;
+
 /**
  * Created by isen on 17/01/2016.
  */
-public class ListFilmFragment extends ListFragment {
+public class ListFilmFragment extends Fragment {
 
     OnArticleSelectedListener listener;
     private ListView mListView;
+
+    public ListFilmFragment() {
+    }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.liste_film_root_fragment, container, false);
-        mListView = (ListView) rootView.findViewById(R.id.listFilm);
+        mListView = (ListView) rootView.findViewById(R.id.list);
 
         //Progresse Bar
         final ProgressBar progressBar = new ProgressBar(getActivity());
@@ -42,6 +49,7 @@ public class ListFilmFragment extends ListFragment {
         // Add the view in our content view
         ViewGroup root = (ViewGroup) rootView.findViewById(R.id.RootRelativeLayout);
         root.addView(progressBar);
+
 
 
 

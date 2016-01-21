@@ -15,7 +15,7 @@
         android:theme="@style/AppTheme" >
 
         <activity
-            android:name="activities.Accueil"
+            android:name="activities.ListeActivity"
             android:label="@string/title_accueil" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
