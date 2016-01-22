@@ -50,8 +50,8 @@ public class ListFilmFragment extends Fragment {
         ViewGroup root = (ViewGroup) rootView.findViewById(R.id.RootRelativeLayout);
         root.addView(progressBar);
 
-
-
+        // adapter
+        ListView.setAdapter(new ArrayAdapter<Film>(getActivity(), android.R.layout.simple_list_item_1, new ArrayList<Film>()));
 
         return rootView;
     }

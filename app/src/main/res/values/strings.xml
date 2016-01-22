@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Movix</string>
     <string name="hello_world">Hello world!</string>
-    <string name="menu_settings">Helps</string>
+    <string name="menu_settings">About</string>
     <string name="title_activity_main">Movix</string>
     <string name="image_content_description">Movix_Logo</string>
     <string name="create_account">Créer un compte</string>
@@ -16,16 +16,19 @@
     <string name="email_or_password_empty">"L'adresse email et mot de passe sont obligatoires"</string>
     <string name="search_hint">Search</string>
 
+    <string name ="pseudo">Pseudo</string>
+    <string name ="nom">Nom</string>
+
+
 
     //bar task
-    <string name="menu_search">rechercher</string>
-
-    //Formulaire
-    <string name="pseudo">Pseudo</string>
-    <string name="nom">Nom</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name ="menu_search">rechercher</string>
+    //API_Key
+    <string name="tmdb_api_key">0d1d0cc3c4aec9ca1c2c8c9e781a7ef1</string>
+    //tmdb_search
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Search</string>
+    <string name="title_activity_imdbsearch_result">TMDBSearchResultActivity</string>
 
 
 </resources>

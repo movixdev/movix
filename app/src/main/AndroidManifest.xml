@@ -22,21 +22,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
-            <meta-data  android:name="android.app.default_searchable"
-                android:value=".MySearchableActivity"/>
         </activity>
 
         <activity
             android:name="activities.LoginDisplayActivity"
-            android:label="@string/title_activity_login_display">
+            android:label="@string/title_activity_login_display"
+            android:launchMode="singleTop">
 
         <intent-filter>
             <action android:name="android.intent.action.SEARCH"/>
         </intent-filter>
-        <meta-data
-            android:name="android.app.searchable"
-            android:resource="@xml/searchable"/>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"/>
         </activity>
+        <meta-data  android:name="android.app.default_searchable"
+            android:value=".LoginDisplayActivity"/>
+
         <activity
             android:name="activities.ConnectionActivity"
             android:label="@string/title_activity_main">
