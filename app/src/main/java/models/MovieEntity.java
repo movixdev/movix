@@ -11,7 +11,7 @@ public class MovieEntity {
         public String release_date;
         public String poster_path;
         public float popularity;
-        public String title;
+        public String title="";
         public boolean video;
         public float vote_average;
         public int vote_count;
@@ -21,7 +21,10 @@ public class MovieEntity {
         public String tagline;
         public String overview;
 
-         public String getOriginal_language() {
+
+
+
+    public String getOriginal_language() {
         return original_language;
         }
 

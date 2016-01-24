@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Inscrivez vous"
+        android:id="@+id/subscribeFormText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:textColor="#fff"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/nom"
+        android:ems="10"
+        android:id="@+id/user_name"
+        android:textColorHint="#fff"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/user_age" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/prenom"
+        android:ems="10"
+        android:id="@+id/user_prenom"
+        android:textColorHint="#fff"
+        android:layout_below="@+id/user_name"
+        android:layout_alignLeft="@+id/user_age" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/user_login"
+        android:hint="@string/login"
+        android:textColorHint="#fff"
+        android:layout_below="@+id/user_prenom"
+        android:layout_alignLeft="@+id/user_alias" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/user_password"
+        android:hint="@string/password"
+        android:textColorHint="#fff"
+        android:layout_below="@+id/user_login"
+        android:layout_alignLeft="@+id/user_login" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/user_alias"
+        android:hint="@string/alias"
+        android:textColorHint="#fff"
+        android:layout_below="@+id/user_password"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/user_age"
+        android:hint="@string/age"
+        android:textColorHint="#fff"
+        android:layout_below="@+id/user_alias"
+        android:layout_alignLeft="@+id/user_alias" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/button_style_white"
+        android:textColor="@color/redMovix"/>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:src="@mipmap/movix_icon"/>
+</RelativeLayout>

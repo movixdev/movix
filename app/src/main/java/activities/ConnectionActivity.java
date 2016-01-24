@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -17,21 +18,54 @@ import java.util.regex.Pattern;
 
 public class ConnectionActivity extends Activity {
 
-	final String EXTRA_LOGIN = "user_login";
-	final String EXTRA_PASSWORD = "user_password";
-
+	Button subscribeButton, registerButton;
 
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.connection_user);
+		subscribeButton = (Button) findViewById(R.id.create_account);
+		registerButton = (Button) findViewById(R.id.connect);
+		loginOrRegister();
+	}
+
+	public void loginOrRegister(){
+		subscribeButton.setOnClickListener(
+				new View.OnClickListener() {
+					@Override
+					public void onClick(View v) {
+
+						if (v.getId() == R.id.create_account) {
+
+							Intent i = new Intent(ConnectionActivity.this, SubscribeActivity.class);
+							startActivity(i);
+						}
+					}
+				}
+		);
+		registerButton.setOnClickListener(
+				new View.OnClickListener() {
+					@Override
+					public void onClick(View v) {
+
+                        if(v.getId() == R.id.connect){
+
+                            Intent i = new Intent(ConnectionActivity.this, LoginDisplayActivity.class);
+                            startActivity(i);
+                        }
+
+					}
+				}
+		);
+	}
 
 
 
-		final EditText login = (EditText) findViewById(R.id.user_email);
-		final EditText pass = (EditText) findViewById(R.id.user_password);
 
+
+
+		/*
 		//Boutton pour entrer dans l'appli
 		final Button loginButton = (Button) findViewById(R.id.connect);
 		loginButton.setOnClickListener(new OnClickListener() {
@@ -82,7 +116,7 @@ public class ConnectionActivity extends Activity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		getMenuInflater().inflate(R.menu.activity_main, menu);
 		return true;
-	}
+	}*/
 
 
 }

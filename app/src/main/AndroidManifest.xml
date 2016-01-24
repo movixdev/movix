@@ -46,7 +46,7 @@
 
         </activity>
         <activity
-            android:name="activities.FormActivity"
+            android:name="activities.SubscribeActivity"
             android:label="@string/title_activity_main">
 
         </activity>
